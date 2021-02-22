@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./mixins";
+@import "./navbar";
+@import "./banner";
+@import "./main";
+@import "./contact";
+@import "./footer";
+@import "./buttons";
+
+* {
+  color: $textColor;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $backgroundColor;
+}
+
+h5 {
+  i {
+    padding-right: 15px;
+  }
+}
