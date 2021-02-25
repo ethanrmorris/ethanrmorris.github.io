@@ -1,0 +1,41 @@
+.hero {
+  height: 100vh;
+}
+
+.heroContainer {
+  @include flexCenter();
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.heroHeading {
+  font-size: 70px;
+  margin-bottom: 24px;
+  color: $textColor;
+  span {
+    color: $accentColor;
+  }
+}
+
+.heroDescription {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.highlight {
+  border-bottom: 4px solid $accentColor;
+}
+
+@media screen and (max-width: 768px) {
+  .heroHeading {
+    font-size: 60px;
+  }
+
+  .heroDescription {
+    font-size: 40px;
+  }
+}

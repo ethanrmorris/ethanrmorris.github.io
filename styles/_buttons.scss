@@ -1,0 +1,51 @@
+.button {
+  @include flexCenter();
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background: $accentColor;
+  color: $textColor;
+  transition: all 0.3s ease;
+}
+
+.mainBtn {
+  font-size: 1rem;
+  background: none;
+  padding: 10px 20px;
+  border: 2px solid $accentColor;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  i {
+    margin-left: 10px;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $accentColor;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
